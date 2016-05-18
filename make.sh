@@ -43,11 +43,12 @@ cmd_brl() { cmd_br; cmd_dlogs; }
 cmd_brs() { cmd_br; cmd_dshell; }
 
 # Run multiple commands without args
-cmd_m() {
+cmd_mm() {
     for cmd in "$@"; do
         cmd_$cmd
     done
 }
+
 if [[ $# -eq 0 ]]; then
     echo Please provide a subcommand
     exit 1
