@@ -42,6 +42,11 @@ cmd_br() { cmd_dbuild; cmd_drun; }
 cmd_brl() { cmd_br; cmd_dlogs; }
 cmd_brs() { cmd_br; cmd_dshell; }
 
+# Print all defined cmd_
+cmd_help() {
+    compgen -A function cmd_
+}
+
 # Run multiple commands without args
 cmd_mm() {
     for cmd in "$@"; do
