@@ -1,9 +1,10 @@
-# make.sh
+# make.cljs
 
 Usage:
 
-    wget -nc https://raw.githubusercontent.com/dryewo/make-sh/master/make.sh && chmod +x make.sh
+    brew install planck
+    wget -nc https://raw.githubusercontent.com/kolja/make-cljs/master/make.cljs && chmod +x make.cljs
 
 Optionally:
 
-    alias mm="./make.sh"
+    alias mm="./make.cljs"
